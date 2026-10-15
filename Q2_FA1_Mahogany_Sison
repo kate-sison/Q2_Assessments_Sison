@@ -1,0 +1,210 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOykyPQJNLLIqAARAKwPcuq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kate-sison/Q2_Assessments_Sison/blob/main/Q2_FA1_Mahogany_Sison\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# version 1\n",
+        "\n",
+        "def add_number (num1,num2):\n",
+        "  return num1+num2\n",
+        "\n",
+        "def subtract_number (num1,num2):\n",
+        "  return num1-num2\n",
+        "\n",
+        "def multipy_number (num1,num2):\n",
+        "  return num1*num2\n",
+        "\n",
+        "def divide_nunber (num1,num2):\n",
+        "  return num1/num2\n",
+        "\n",
+        "print(\"Choose an operation to use.\")\n",
+        "print(\"1-Addition\")\n",
+        "print(\"2-Subtraction\")\n",
+        "print(\"3-Multiplication\")\n",
+        "print(\"4-Division\")\n",
+        "\n",
+        "choice = input(\"Enter an operation to use. (1/2/3/4): \")\n",
+        "\n",
+        "num1 = int(input(\"Input your first number. \"))\n",
+        "num2 = int(input(\"Input your second number. \"))\n",
+        "\n",
+        "if choice == '1':\n",
+        "  output = add_number (num1,num2)\n",
+        "  print(\"Result: \", output)\n",
+        "\n",
+        "if choice == '2':\n",
+        "  output = subtract_number (num1,num2)\n",
+        "  print(\"Result:\", output)\n",
+        "\n",
+        "if choice == '3':\n",
+        "  output = multiply_number (num1,num2)\n",
+        "  print(\"Result:\", output)\n",
+        "\n",
+        "if choice == '4':\n",
+        "  output = divide_number (num1,num2)\n",
+        "  print(\"Result:\", output)"
+      ],
+      "metadata": {
+        "id": "DsUueuD6PveQ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b7ac7e81-1a96-4060-c69b-2fc48affc92f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Choose an operation to use.\n",
+            "1-Addition\n",
+            "2-Subtraction\n",
+            "3-Multiplication\n",
+            "4-Division\n",
+            "Enter an operation to use. (1/2/3/4): 1\n",
+            "Input your first number. 3\n",
+            "Input your second number. 2\n",
+            "Result:  5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "uZkQbkxxAy92",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e234186c-d0f6-46f3-98ae-23ca10417473"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Choose an operation to use.\n",
+            "1-Addition\n",
+            "2-Subtraction\n",
+            "3-Multiplication\n",
+            "4-Division\n",
+            "Enter a an operation to use. (1/2/3/4): 4\n",
+            "Input your first number. 4\n",
+            "Input your second number. 2\n",
+            "Result:,  2.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "## Verison 2\n",
+        "\n",
+        "# Define the variables\n",
+        "\n",
+        "def add_number (num1 , num2):\n",
+        "    return num1+num2\n",
+        "\n",
+        "def subtract_number (num1 , num2):\n",
+        "    return num1-num2\n",
+        "\n",
+        "def multiply_number (num1,num2):\n",
+        "    return num1*num2\n",
+        "\n",
+        "def divide_number (num1,num2):\n",
+        "    return num1/num2\n",
+        "    if num2 == 0: print(\"Choose another number other than 0.\")\n",
+        "\n",
+        "#Make them select an operation to use\n",
+        "\n",
+        "print(\"Choose an operation to use.\")\n",
+        "print(\"1-Addition\")\n",
+        "print(\"2-Subtraction\")\n",
+        "print(\"3-Multiplication\")\n",
+        "print(\"4-Division\")\n",
+        "\n",
+        "choice = input(\"Enter a an operation to use. (1/2/3/4): \")\n",
+        "\n",
+        "# Ask for the user's inputs\n",
+        "\n",
+        "num1 = int(input(\"Input your first number. \"))\n",
+        "num2 = int(input(\"Input your second number. \"))\n",
+        "\n",
+        "#Solving for the output\n",
+        "if choice == '1':\n",
+        "  output = add_number (num1,num2)\n",
+        "  print(\"Result:, \", output)\n",
+        "\n",
+        "elif choice == '2':\n",
+        "  output= subtract_number (num1,num2)\n",
+        "  print(\"Result:, \", output)\n",
+        "\n",
+        "elif choice == '3':\n",
+        "  output = multiply_number(num1,num2)\n",
+        "  print(\"Result:, \", output)\n",
+        "\n",
+        "elif choice == '4':\n",
+        "  output = divide_number (num1,num2)\n",
+        "\n",
+        "  if num2 != 0:\n",
+        "    print(\"Result:, \", output)\n",
+        "\n",
+        "  else:\n",
+        "    print(\"Choose another number other than 0.\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"Wrong selection. Please choose only between the 4 operations.\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "y1cYc2fS8rBS"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. What functions did you create in your calculator program? add_number for addition, subtract_number for subtraction, multiply_number for multiplication, divide_number for division\n",
+        "2. What parameters did your functions use?\n",
+        " Each function used two parameters: num1 and aum2.\n",
+        "3. What arguments were passed when the functions were called? The user-entered input values stored in the num1 and num2 variables were passed as arguments.\n",
+        "4. How did your program use the returned value?\n",
+        " The program stored the returned value inside an output variable and then displayed it to the user using a print() statement.\n",
+        "5. Why is it better to divide the calculator program into functions instead of writing everything in one long block of code?\n",
+        " It makes the code modular, easier to read, simpler to debug, and allows specific mathematical operations to be reused without repeating code."
+      ],
+      "metadata": {
+        "id": "_BKQZNIq83i2"
+      }
+    }
+  ]
+}
